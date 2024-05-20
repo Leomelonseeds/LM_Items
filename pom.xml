@@ -127,14 +127,6 @@
             <url>https://jitpack.io</url>
         </repository>
         <repository>
-            <id>phoenix</id>
-            <url>https://nexus.phoenixdevt.fr/repository/maven-public/</url>
-        </repository>
-        <repository>
-            <id>auxilor</id>
-            <url>https://repo.auxilor.io/repository/maven-public/</url>
-        </repository>
-        <repository>
             <id>nexus</id>
             <name>Lumine Releases</name>
             <url>https://mvn.lumine.io/repository/maven-public/</url>
@@ -149,33 +141,10 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <!-- https://www.spigotmc.org/resources/combat-weaponry-plus-1-20.84248/ -->
-            <groupId>nomaven</groupId>
-            <artifactId>CombatWeaponryPlus</artifactId>
-            <version>1.5.7</version>
-            <scope>system</scope>
-            <!-- this plugin doesn't even have a pom! -->
-            <systemPath>${env.LIBS}/CombatWeaponryPlus v1.5.7 (1.20).jar</systemPath>
-        </dependency>
-        <dependency>
             <!-- https://www.spigotmc.org/resources/%E2%9A%94-mythicmobs-free-version-%E2%96%BAthe-1-custom-mob-creator%E2%97%84.5702/ -->
             <groupId>io.lumine</groupId>
             <artifactId>Mythic-Dist</artifactId>
             <version>5.6.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- https://www.spigotmc.org/resources/%E2%98%84%EF%B8%8F-oraxen-add-items-blocks-armors-hats-food-furnitures-plants-and-gui-1-18-1-20-4.72448/ -->
-            <groupId>nomaven</groupId>
-            <artifactId>Oraxen</artifactId>
-            <version>1.166.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- https://www.spigotmc.org/resources/itemedit-1-8-x-1-20-x.40993/ -->
-            <groupId>nomaven</groupId>
-            <artifactId>ItemEdit</artifactId>
-            <version>3.1.5</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -186,118 +155,17 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <!-- https://www.spigotmc.org/resources/promccore.93608/ -->
-            <groupId>nomaven</groupId>
-            <artifactId>promccore</artifactId>
-            <version>1.0.3.9</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>nomaven</groupId>
-            <artifactId>prorpgitems</artifactId>
-            <version>1.0.3.16</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- https://github.com/nulli0n/NexEngine-spigot -->
-            <!-- used by ExcellentCrates -->
-            <groupId>nomaven</groupId>
-            <artifactId>NexEngine</artifactId>
-            <version>2.2.12</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- https://www.spigotmc.org/resources/excellentcrates-advanced-custom-crates.48732/ -->
-            <groupId>nomaven</groupId>
-            <artifactId>ExcellentCrates</artifactId>
-            <version>5.0.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- https://www.spigotmc.org/resources/customcrafting-advanced-custom-recipe-plugin-1-16-1-19-free.55883/ -->
-            <groupId>nomaven</groupId>
-            <artifactId>CustomCrafting</artifactId>
-            <version>3.16.8.1</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- https://www.curseforge.com/minecraft/bukkit-plugins/wolfyutilities -->
-            <groupId>nomaven</groupId>
-            <artifactId>WolfyUtilities</artifactId>
-            <version>4.16.1.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- https://www.spigotmc.org/resources/magichealth.97199/ -->
-            <groupId>nomaven</groupId>
-            <artifactId>MagicHealth</artifactId>
-            <version>1.4.5</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- https://www.spigotmc.org/resources/%E2%9C%A8itemsadder%E2%AD%90emotes-mobs-items-armors-hud-gui-emojis-blocks-wings-hats-liquids.73355/ -->
-            <groupId>com.github.LoneDev6</groupId>
-            <artifactId>api-itemsadder</artifactId>
-            <version>3.0.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- https://polymart.org/resource/custom-items.1 -->
-            <groupId>nomaven</groupId>
-            <artifactId>CustomItemsAPI</artifactId>
-            <version>1.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- https://github.com/Auxilor/eco -->
-            <groupId>com.willfp</groupId>
-            <artifactId>eco</artifactId>
-            <version>6.57.2</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- https://www.spigotmc.org/resources/custom-items-free-executable-items.77578/ -->
-            <groupId>nomaven</groupId>
-            <artifactId>ExecutableItems</artifactId>
-            <version>5.9.9</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- https://www.spigotmc.org/resources/custom-items-free-executable-items.77578/ -->
-            <!-- Used by ExecutableItems -->
-            <groupId>nomaven</groupId>
-            <artifactId>SCore</artifactId>
-            <version>3.9.9</version>
-            <scope>provided</scope>
-        </dependency>
-            <!-- https://www.spigotmc.org/resources/mmoitems-premium.39267/ -->
-        <dependency>
-            <groupId>nomaven</groupId>
-            <artifactId>MMOItems</artifactId>
-            <version>6.9.5-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <!-- https://www.spigotmc.org/resources/mythiclib.90306/ -->
-            <!-- Used by MMOItems -->
-            <groupId>nomaven</groupId>
-            <artifactId>MythicLib</artifactId>
-            <version>1.3.1</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- https://www.spigotmc.org/resources/coins.33382/ -->
-            <groupId>nomaven</groupId>
-            <artifactId>Coins</artifactId>
-            <version>1.13</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <!-- https://github.com/Arcaniax-Development/HeadDatabase-API -->
             <groupId>com.arcaniax</groupId>
             <artifactId>HeadDatabase-API</artifactId>
             <version>1.3.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <!-- UltimaAddons hell yeah -->
+            <groupId>com.leomelonseeds</groupId>
+            <artifactId>UltimaAddons</artifactId>
+            <version>1.4</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
