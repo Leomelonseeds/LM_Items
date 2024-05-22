@@ -3,6 +3,7 @@ package io.github.stumper66.lm_items.plugins;
 import java.util.Collection;
 import java.util.Collections;
 
+import org.apache.commons.lang3.math.NumberUtils;
 import org.bukkit.Bukkit;
 import org.jetbrains.annotations.NotNull;
 
@@ -28,7 +29,17 @@ public class UltimaAddons implements ItemsAPI {
         if (!result.pluginIsInstalled) return result;
         
         com.leomelonseeds.ultimaaddons.UltimaAddons ua = com.leomelonseeds.ultimaaddons.UltimaAddons.getPlugin();
-        result.itemStack = ua.getItems().getItem(itemRequest.itemId);
+        String id = itemRequest.itemId;
+        
+        // FORMAT: ugear_TIER_TYPE
+        if (id.contains("ugear_")) {
+            String[] args = id.split("_");
+            int tier = NumberUtils.toInt(args[1]);
+            result.itemStack = ua.getLootHandler().randomGear(tier, args[2]);
+        } else {
+            result.itemStack = ua.getItems().getItem(itemRequest.itemId);
+        }
+        
         return result;
     }
 
